@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffetteria La Fontana - Listino Prezzi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fcfbfa;
+            --text-color: #2c2520;
+            --accent-color: #8c7853;
+            --border-color: #e6e1da;
+            --max-width: 600px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        .category {
+            max-width: var(--max-width);
+            margin: 0 auto 35px auto;
+        }
+
+        .category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .item-name {
+            font-weight: 400;
+            padding-right: 10px;
+            background-color: var(--bg-color);
+            z-index: 1;
+        }
+
+        .item-dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted var(--border-color);
+            position: relative;
+            top: -4px;
+        }
+
+        .item-price {
+            font-weight: 600;
+            padding-left: 10px;
+            background-color: var(--bg-color);
+            z-index: 1;
+        }
+
+        footer {
+            text-align: center;
+            max-width: var(--max-width);
+            margin: 50px auto 20px auto;
+            font-size: 0.85rem;
+            color: #7c726a;
+            font-style: italic;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Caffetteria La Fontana</h1>
+        <p>Listino Prezzi</p>
+    </header>
+
+    <main>
+        <section class="category">
+            <h2 class="category-title">Caffetteria</h2>
+            <div class="menu-item"><span class="item-name">Caffè</span><div class="item-dots"></div><span class="item-price">1,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Caffè corretto</span><div class="item-dots"></div><span class="item-price">1,80 €</span></div>
+            <div class="menu-item"><span class="item-name">Caffè dec</span><div class="item-dots"></div><span class="item-price">1,80 €</span></div>
+            <div class="menu-item"><span class="item-name">Caffè con panna</span><div class="item-dots"></div><span class="item-price">1,80 €</span></div>
+            <div class="menu-item"><span class="item-name">Caffè d'orzo</span><div class="item-dots"></div><span class="item-price">1,80 €</span></div>
+            <div class="menu-item"><span class="item-name">Ginseng</span><div class="item-dots"></div><span class="item-price">1,80 €</span></div>
+            <div class="menu-item"><span class="item-name">Caffè doppio</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Cioccolata calda</span><div class="item-dots"></div><span class="item-price">3,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Caffè alla nocciola</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Crema di caffè</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Marocchino</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Cappuccino</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Latte e menta</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Latte macchiato</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Thè - Camomilla</span><div class="item-dots"></div><span class="item-price">1,30 €</span></div>
+            <div class="menu-item"><span class="item-name">Tisane</span><div class="item-dots"></div><span class="item-price">2,30 €</span></div>
+            <div class="menu-item"><span class="item-name">Cocktail Sanpellegrino</span><div class="item-dots"></div><span class="item-price">2,30 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Succhi</h2>
+            <div class="menu-item"><span class="item-name">Pera</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Pesca</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Pompelmo</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Ace</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Ananas</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Mirtillo</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Granite</h2>
+            <div class="menu-item"><span class="item-name">Limone</span><div class="item-dots"></div><span class="item-price">1,80 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Bibite</h2>
+            <div class="menu-item"><span class="item-name">Coca cola – Fanta</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Estathè pesca / limone</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Acqua tonica</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Schweppes arancia</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Tassoni</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Red bull</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Bottiglia acqua 0,5l</span><div class="item-dots"></div><span class="item-price">1,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Chinotto</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Lemonsoda</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Sciroppi</span><div class="item-dots"></div><span class="item-price">1,50 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Birre in Bottiglia</h2>
+            <div class="menu-item"><span class="item-name">Nastro azzurro 33 cl</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Tennent's 33 cl</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Peroni 33 cl</span><div class="item-dots"></div><span class="item-price">1,50 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Aperitivi Analcolici</h2>
+            <div class="menu-item"><span class="item-name">Crodino</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Bitter bianco</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Bitter rosso</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Crodino Twist</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Spritz</h2>
+            <div class="menu-item"><span class="item-name">Spritz Aperol</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Campari</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Hugo</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Limoncello</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Aperitivi Alcolici</h2>
+            <div class="menu-item"><span class="item-name">Campari soda</span><div class="item-dots"></div><span class="item-price">2,30 €</span></div>
+            <div class="menu-item"><span class="item-name">Campari soda + Gin (correzione)</span><div class="item-dots"></div><span class="item-price">2,80 €</span></div>
+            <div class="menu-item"><span class="item-name">Aperol</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Prosecco</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Prosecco + vodka</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Spritz</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Campari</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Mix Long Drink</h2>
+            <div class="menu-item"><span class="item-name">Gin lemon</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Gin tonic</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Cuba libre</span><div class="item-dots"></div><span class="item-price">4,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Aperol tass</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Vodka (Liscia, pesca, melone, fragola)</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Amari</h2>
+            <div class="menu-item"><span class="item-name">Averna</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Del Capo</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Petrus</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Montenegro</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Lucano</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Jagermaister</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Grappe &amp; Whisky</h2>
+            <div class="menu-item"><span class="item-name">Grappa Bianca</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Grappa Barricata</span><div class="item-dots"></div><span class="item-price">3,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Jack Daniels</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">Liquori &amp; Vini</h2>
+            <div class="menu-item"><span class="item-name">Mela annurca</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Nocino</span><div class="item-dots"></div><span class="item-price">2,30 €</span></div>
+            <div class="menu-item"><span class="item-name">Limoncello</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Strega</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Baileys</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Bacardi</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Sambuca</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Stock</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Vecchia Romagna</span><div class="item-dots"></div><span class="item-price">2,00 €</span></div>
+            <div class="menu-item"><span class="item-name">Martini bianco</span><div class="item-dots"></div><span class="item-price">2,50 €</span></div>
+            <div class="menu-item"><span class="item-name">Bicchiere di vino</span><div class="item-dots"></div><span class="item-price">3,00 €</span></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nota: Prezzi validi con servizio al tavolo.</p>
+    </footer>
+
+</body>
+</html>
